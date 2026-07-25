@@ -43,9 +43,9 @@ class TestPIIScrubber:
         """Test various US phone number formats."""
         formats = [
             "555-123-4567",
-            "(555) 123-4567",
             "555.123.4567",
             "+1 555 123 4567",
+            "(555) 123-4567",
         ]
 
         for phone in formats:
