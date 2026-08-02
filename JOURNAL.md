@@ -34,3 +34,36 @@ Reproduced the issue by running the existing PII scrubber unit tests in `tests/u
 
 **Blockers or open questions:**
 Pre-commit hooks currently report existing ruff and mypy issues unrelated to the phone number reproduction.
+
+
+## Week 9 — Solution building & PR submission
+
+### Check-in 1 (mid-week)
+
+**Current progress:**
+[What have you implemented so far? Which sub-tasks from PLAN.md are done?]
+I analyzed the existing regex patterns from Subtask 1 to identify why certain phone number formats were not being detected. After identifying the missing cases, I updated the phone_us pattern to support those formats and validated that the detection logic worked as expected. Before making changes, I also ran make check and discovered that two test functions were incomplete. I reviewed those tests and noted the additional work needed before completing the implementation.
+
+**Next steps:**
+Implement the remaining PLAN.md subtasks (Subtasks 3 and 4), complete the two incomplete test functions, add any required test cases for the updated phone number pattern, run the full test suite and validation checks, and verify that the changes do not introduce any regressions.
+
+**Blockers:**
+None
+
+---
+
+### Check-in 2 (end of week)
+
+**PR link:** [link to your submitted pull request]
+
+**Branch:** [the branch name you worked on, e.g. `fix/123-short-description`]
+
+**What you built:**
+[1–3 sentences summarizing what your fix does and how it works]
+
+**Tests added or updated:**
+[Which test files did you touch? What do they cover?]
+
+**Self-review confirmation:** [ ] make check passes  [ ] make test-unit passes
+
+**Draft PR feedback received from:** [name or Slack handle, or "none"]
