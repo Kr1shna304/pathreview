@@ -54,16 +54,16 @@ None
 
 ### Check-in 2 (end of week)
 
-**PR link:** [link to your submitted pull request]
+**PR link:** [\[link to your submitted pull request\]](https://github.com/ascherj/pathreview/pull/605)
 
-**Branch:** [the branch name you worked on, e.g. `fix/123-short-description`]
+**Branch:** fix/146-parenthesized-phone-redaction
 
 **What you built:**
-[1–3 sentences summarizing what your fix does and how it works]
+Updated the PII scrubber to correctly detect and redact additional valid US phone number formats by modifying the phone_us regex pattern in pii_scrubber.py. I also adjusted the street address regex to resolve formatting issues and made minor code quality improvements, including fixing annotations, replacing an unused loop variable with _, and addressing formatting issues required for CI.
 
 **Tests added or updated:**
-[Which test files did you touch? What do they cover?]
+Updated tests/unit/test_pii_scrubber.py by extending the existing test_detect_no_false_positives and test_address_variations tests to verify the updated phone number and address pattern behavior. I also added missing return type annotations in the test file to satisfy type-checking requirements.
 
-**Self-review confirmation:** [ ] make check passes  [ ] make test-unit passes
+**Self-review confirmation:** [x] make check passes  [x] make test-unit passes
 
-**Draft PR feedback received from:** [name or Slack handle, or "none"]
+**Draft PR feedback received from:** none
