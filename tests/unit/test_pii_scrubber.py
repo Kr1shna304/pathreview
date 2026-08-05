@@ -200,8 +200,10 @@ class TestPIIScrubber:
 
         for addr in addresses:
             text = f"Address: {addr}"
-            scrubber.scrub(text)
+            scrubbed = scrubber.scrub(text)
             # Should attempt to redact addresses
+            assert "[REDACTED]" in scrubbed
+            assert addr not in scrubbed
 
     def test_empty_text(self, scrubber: PIIScrubber) -> None:
         """Test with empty text."""
