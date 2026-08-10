@@ -67,3 +67,38 @@ Updated tests/unit/test_pii_scrubber.py by extending the existing test_detect_no
 **Self-review confirmation:** [x] make check passes  [x] make test-unit passes
 
 **Draft PR feedback received from:** none
+
+
+## Week 10 — Iteration & reflection
+
+### Reviewer feedback
+
+**Feedback received:** [ ] Yes  [X] No — still awaiting review
+
+**Summary of feedback:**
+Yet to receive 
+
+**How you responded:**
+None
+
+---
+
+### Reflection
+
+**What was harder than you expected?**
+The first challenge was reproducing the issue. I initially thought I could simply install the project and go step by step, but personal system configuration issues made the setup more difficult than expected. I faced some challenges with Docker and getting everything running correctly. While investigating the issue and reviewing the existing test cases, I also discovered some problems that were outside the scope of the original issue. We separated those into different issues instead of trying to solve everything at once.
+
+
+**What did you learn about working in a large codebase?**
+When we build our own projects from scratch, we usually know the structure and understand where different pieces of code are located. However, in a large existing codebase, that understanding is not automatically there. Documentation and organization make a big difference in how quickly someone can understand and work with the code. I learned that real-world codebases are not always perfect, and before fixing a bug, we need to understand both the specific issue and the overall structure around it. Taking an organized approach makes it much easier to investigate, learn, and solve problems.
+
+**How did AI tools help — and where did they fall short?**
+AI was useful for understanding what particular functions were doing, how different parts of the code were connected, and which functions called each other. It also helped me understand functions at a high level without having to read every line of code, identify existing code patterns, write code based on specifications, create test cases, and work through some deployment-related code.
+However, AI is only effective when we provide clear and specific context. It is not practical to simply ask it to understand an entire codebase, and sometimes it can miss important details. I also learned that AI should not make technical decisions for us. It can help us reason through the possible outcomes of a decision, but the final decision should come from our own understanding and judgment. 
+
+**What would you do differently if you started over?**
+I intentionally selected a relatively simple issue because I was still getting familiar with the codebase and wanted to start with an issue involving fewer file changes. Now that I have gained more experience with the project, I can better assess an issue before deciding how to approach it. I would first understand the scope, review the related code and tests, and do some initial testing to validate the problem before deciding on the implementation approach.
+
+**What are you most proud of from this module?**
+I am most proud of how much I learned about the overall codebase. I developed a high-level understanding of the project structure, including the tests, core functionality, RAG components, frontend, ingestion, safety, and other major areas. I then focused on the assigned issue, reproduced and investigated the problem, identified the underlying mistake, discovered additional issues and unwritten test cases, and ultimately resolved the core issue and submitted the PR.
+This experience pushed me beyond simply writing code. I learned how to navigate an unfamiliar real-world codebase, investigate an issue systematically, understand existing patterns, validate a solution, and contribute through the complete development workflow. It made me feel that I was moving beyond being someone who just writes code and becoming a more well-rounded developer.
